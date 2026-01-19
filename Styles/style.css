@@ -281,8 +281,8 @@ text-align: center;
 .bottom ul{
     border-top: 1px solid rgba(255, 255, 255, 0.103);
     padding-top:80px ;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
 }
 .bottom ul li{
   
@@ -295,6 +295,89 @@ text-align: center;
 }
 
 
+/* ------------------- */
+.middle{
+    max-width: 1600px;
+    background-color: rgba(35, 14, 61, 1);
+    margin: 0 auto;
+}
+.Heading h1{
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 120px 0 40px 0px;
+  text-align: center;
+ 
+}
+
+.card-section {
+padding: 120px 200px;
+
+
+}
+.card-section div{
+border-radius: 40px;
+background-color: rgba(53, 17, 101, 0.4);
+
+}
+.card-section h2{
+color: #FFFFFF;
+font-size: 1.5rem;
+
+}
+.card-section p{
+color: rgba(255, 255, 255, 0.637);
+font-size: 1 rem;
+
+}
+.card img{
+    height: 60px;
+    width:60px
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:16px;
+
+   padding: 40px;
+}
+
+
+.card1{
+    grid-area: c1;
+   
+   
+    
+}
+.card2{
+     grid-area: c2;
+   
+
+}
+.card3{
+    grid-area: c3;
+    
+}
+.card4{
+    grid-area: c4;
+  
+}
+.card5{
+    grid-area: c5;
+  
+}
+
+.card-section {
+
+display: grid;
+gap:30px;
+grid-template-areas:
+ "c1 c2 c2 c2"
+ "c1 c3 c3 c3"
+ "c4 c4 c4 c5"
+
+}
 
 
 
@@ -334,29 +417,120 @@ text-align: center;
 
 .banner{
       width:100%;
+    
      padding: 40px 20px;
      background-size:relative;
 } 
 
 
+.banner-heading p{
+font-size: 1rem;
+white-space: nowrap;
+
+font-weight: 400;
+
+margin: 0 auto;
+text-align: center;
+margin-bottom: 1px;
+
+
+}
+.banner-heading .par{
+font-size: 1rem;
+white-space: nowrap;
+margin-bottom: 24px;
+font-weight: 400;
+}
+
+
+.upper{
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.up-section h2{
+    font-size: 2rem;
+     width: 400px;
+}
+.up-section p{
+    font-size: 1rem;
+    line-height: 20px;
+    width: 450px;
+    height: 120px;
+    margin:0 auto;
+
+
+     gap: 16px;
+    
+   
+}
+.up-section .par{
+    
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.bottom ul{
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+}
+
+
+.middle{
+ width:100%;
+    padding:40px 20px;
+}
+
+
+.Heading h1{
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 40px 0 40px 0px;
+  text-align: center;
+  
+}
+
+.card-section {
+
+display: grid;
+gap:16px;
+grid-template-areas:
+ "c1 c1 c1 c1"
+ "c2 c2 c2 c2"
+ "c3 c3 c3 c3"
+
+ "c4 c4 c4 c4"
+  "c5 c5 c5 c5";
+  justify-items: center;
+padding: 0px;
+}
+
+
+.card-section h2{
+color: #FFFFFF;
+font-size: 1.3rem;
+
+}
+.card-section p{
+color: rgba(255, 255, 255, 0.637);
+font-size: 1 rem;
+
+}
+.card img{
+    height: 50px;
+    width:50px
+}
+
+.card-section div {
+
+width: 100%;
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
